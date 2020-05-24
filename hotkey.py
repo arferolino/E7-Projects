@@ -29,6 +29,8 @@ def on_release(key):
     if any([key in COMBO for COMBO in COMBINATIONS]):
         current.remove(key)
 
+        # Hello 
+
 
 
 
