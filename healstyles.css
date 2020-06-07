@@ -1,5 +1,19 @@
-body {background-color: lightgrey;}
+body {
+    background-color: lightgrey;
+}
 
-table, th, td {
+.width-300 {
+    width: 300px;
+}
+
+.border-black {
     border: 1px solid black;
-  }
+}
+
+.slidecontainer {
+    border: 1px solid black;
+    width: 15%;
+    padding: 10px;
+    border-radius: 20px;
+}
+
