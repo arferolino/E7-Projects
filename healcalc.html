@@ -1,100 +1,87 @@
 <!DOCTYPE html>
+
 <head>
     <title>E7 Healer Calc</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="healstyles.css">
 </head>
+
 <body>
     <div style="text-align: center; font-size: 36px">
         <p>Epic Seven Healer Calculator 1.0</p>
     </div>
-    <div class="dropdown; form-group col-md-12 col-sm-12" style="margin-left: 50px;">
-        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Heroes
-        </button>
-        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-          <a class="dropdown-item" href="#">Achates</a>
-          <a class="dropdown-item" href="#">Aither</a>
-          <a class="dropdown-item" href="#">Angelica</a>
-          <a class="dropdown-item" href="#">Angelic Montmorancy</a>
-          <a class="dropdown-item" href="#">Blaze Dingo</a>
-          <a class="dropdown-item" href="#">Blood Moon Haste</a>
-          <a class="dropdown-item" href="#">Desert Jewel Basar</a>
-          <a class="dropdown-item" href="#">Destina</a>
-          <a class="dropdown-item" href="#">Diene</a>
-          <a class="dropdown-item" href="#">Doris</a>
-          <a class="dropdown-item" href="#">Elena</a>
-          <a class="dropdown-item" href="#">Elson</a>
-          <a class="dropdown-item" href="#">Hazel</a>
-          <a class="dropdown-item" href="#">Jecht</a>
-          <a class="dropdown-item" href="#">Lots</a>
-          <a class="dropdown-item" href="#">Maid Chloe</a>
-          <a class="dropdown-item" href="#">Mascot Hazel</a>
-          <a class="dropdown-item" href="#">Montmorancy</a>
-          <a class="dropdown-item" href="#">Ray</a>
-          <a class="dropdown-item" href="#">Rin</a>
-          <a class="dropdown-item" href="#">Roana</a>
-          <a class="dropdown-item" href="#">Ruele of Light</a>
-          <a class="dropdown-item" href="#">Shooting Star Achates</a>
-          <a class="dropdown-item" href="#">Sinful Angelica</a>
-          <a class="dropdown-item" href="#">Tamarinne</a>
+    <div class='width-300'>
+        <label for="hero-select">
+            Heroes:
+        </label>
+        <select name="heroes" id="hero-select">
+            <option value="Achates">Achates</option>
+            <option value="Aither">Aither</option>
+            <option value="Angelica">Angelica</option>
+            <option value="Angelic Montmorancy">Angelic Montmorancy</option>
+            <option value="Blood Moon Haste">Blood Moon Haste</option>
+            <option value="Desert Jewel Basar">Desert Jewel Basar</option>
+            <option value="Destina">Destina</option>
+            <option value="Diene">Diene</option>
+            <option value="Doris">Doris</option>
+            <option value="Elena">Elena</option>
+            <option value="Elson">Elson</option>
+            <option value="Hazel">Hazel</option>
+            <option value="Lots">Lots</option>
+            <option value="Maid Chloe">Maid Chloe</option>
+            <option value="Mascot Hazel">Mascot Hazel</option>
+            <option value="Montmorancy">Montmorancy</option>
+            <option value="Ray">Ray</option>
+            <option value="Rin">Rin</option>
+            <option value="Roana">Roana</option>
+            <option value="Ruele of Light">Ruele of Light</option>
+            <option value="Shooting Star Achates">Shooting Star Achates</option>
+            <option value="Sinful Angelica">Sinful Angelica</option>
+            <option value="Tamarinne">Tamarinne</option>
+        </select>
+    </div>
+    <div class='width-300'>
+        <label for="art-select">
+            Artifact:
+        </label>
+        <select name="artifact" id="art-select">
+            <option value="Celestine">Celestine</option>
+            <option value="Rod of Amaryllis">Rod of Amaryllis</option>
+            <option value="Shimadra Staff">Shimadra Staff</option>
+            <option value="Touch of Rekos">Touch of Rekos</option>
+        </select>
+    </div>
+</br>
+    <div class='slidecontainer'>
+        <label style="margin-left: 50px">
+            <h5>Health</h5>
+        </label>
+        <div>
+            <input type="range" style="margin-left: 65px" min="800" max="25000" value="100" class="slider" id="health">
         </div>
-      </div>
-    <div class="dropdown; form-group col-md-12 col-sm-12" style="margin-left: 50px;">
-        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          No Artifact Proc
-        </button>
-        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-          <a class="dropdown-item" href="#">Celestine</a>
-          <a class="dropdown-item" href="#">Rod of Amaryllis</a>
-          <a class="dropdown-item" href="#">Shimadra Staff</a>
-          <a class="dropdown-item" href="#">Touch of Rekos</a>
+    </div>
+</br>
+    <div class='slidecontainer'>
+        <label style="margin-left: 50px">
+            <h5>Artifact Level</h5>
+        </label>
+        <div>
+            <input type="range" style="margin-left: 65px" min="1" max="30" value="1" class="slider" id='art-level'>
         </div>
     </div>
-    <label class="col-md-12 col-sm-12" style="margin-left: 50px">
-        <h5>Health</h5>
-    </label>
-    <div class="slidecontainer">
-        <input type="range" style="margin-left: 65px" min="800" max="25000" value="100" class="slider" id="health">
+</br>
+    <div class='border-black; slidecontainer'>
+        <table>
+            <tr>
+                <th>Skill 1</th>
+                <th>Skill 2</th>
+                <th>Skill 3</th>
+            </tr>
+            <tr>
+                <th>N/A</th>
+                <th>N/A</th>
+                <th>N/A</th>
+            </tr>
+        </table>
     </div>
-    <label class="col-md-12 col-sm-12" style="margin-left: 50px">
-        <h5>Artifact Level</h5>
-    </label>
-    <div class="slidecontainer">
-        <input type="range" style="margin-left: 65px" min="1" max="30" value="1" class="slider" id="artLevel">
-    </div>
-    <label class="col-md-12 col-sm-12" style="margin-left: 50px">
-        <h5>S1</h5>
-    </label>
-    <div class="slidecontainer">
-        <input type="range" style="margin-left: 65px" min="1" max="5" value="1" class="slider" id="s1">
-    </div>
-    <label class="col-md-12 col-sm-12" style="margin-left: 50px">
-        <h5>S2</h5>
-    </label>
-    <div class="slidecontainer">
-        <input type="range" style="margin-left: 65px" min="1" max="5" value="1" class="slider" id="s2">
-    </div>
-    <label class="col-md-12 col-sm-12" style="margin-left: 50px">
-        <h5>S3</h5>
-    </label>
-    <div class="slidecontainer">
-        <input type="range" style="margin-left: 65px" min="1" max="5" value="1" class="slider" id="s3">
-    </div>
-    <button style="margin-left: 65px" type="button">Calculate</button>
-    <table style="width:100%; margin-left: 65px">
-        <tr>
-          <th>S1</th>
-          <th>S2</th> 
-          <th>S3</th>
-          <th>Soulburn</th>
-        </tr>
-        <tr>
-            <th>0</th>
-            <th>0</th>
-            <th>0</th>
-            <th>0</th>
-        </tr>
-      </table>
-</body>
 
+</body>
