@@ -12,8 +12,40 @@ body {
 
 .slidecontainer {
     border: 1px solid black;
+    width: 20%;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.resultcontainer {
+    border: 1px solid black;
     width: 15%;
     padding: 10px;
     border-radius: 20px;
+}
+
+/* Slider Value */
+.range-slider_value {
+    display: inline-block;
+    position: relative;
+    width: 5px;
+    color: white;
+    line-height: 20px;
+    text-align: center;
+    border-radius: 3px;
+    background: gray;
+    padding: 5px 10px;
+    margin-left: 8px;
+}
+.range-slider_value:after {
+    position: absolute;
+    top: 8px;
+    left: -7px;
+    width: 0;
+    height: 0;
+    border-top: 7px solid transparent;
+    border-right: 7px gray;
+    border-bottom: 7px solid transparent;
+    content: '';
 }
 
