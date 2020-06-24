@@ -10,7 +10,14 @@ body {
     border: 1px solid black;
 }
 
-.slidecontainer {
+.slidecontainer1 {
+    border: 1px solid black;
+    width: 20%;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.slidecontainer2 {
     border: 1px solid black;
     width: 20%;
     padding: 10px;
@@ -28,10 +35,9 @@ body {
 .range-slider_value {
     display: inline-block;
     position: relative;
-    width: 5px;
+    width: 30xpx;
     color: white;
     line-height: 20px;
-    text-align: center;
     border-radius: 3px;
     background: gray;
     padding: 5px 10px;
