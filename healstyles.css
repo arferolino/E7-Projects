@@ -10,25 +10,23 @@ body {
     border: 1px solid black;
 }
 
-.slidecontainer1 {
+.slidecontainer {
     border: 1px solid black;
     width: 25%;
     padding: 10px;
     border-radius: 20px;
 }
 
-.slidecontainer2 {
-    border: 1px solid black;
-    width: 25%;
-    padding: 10px;
-    border-radius: 20px;
-}
 
 .resultcontainer {
     border: 1px solid black;
     width: 15%;
     padding: 10px;
     border-radius: 20px;
+}
+
+.slider-input {
+    width: 50px;
 }
 
 /* Slider Value */

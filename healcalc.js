@@ -1,20 +1,19 @@
-$(document).ready(function () {
-  var rangeSlider = function () {
-    var slider = $(".range-slider"),
-      range = $(".slider"),
-      value = $(".range-slider__value");
+function updateHealthBox() {
+  var health = document.getElementById('health').value;
+  document.getElementById('health-number').value = health
+}
 
-    slider.each(function () {
-      value.each(function () {
-        var value = $(this).prev().attr("value");
-        $(this).html(value);
-      });
+function updateHealthSlider() {
+  var healthNumber = document.getElementById('health-number').value;
+  document.getElementById('health').value = healthNumber
+}
 
-      range.on("input", function () {
-        $(this).next(value).html(this.value);
-      });
-    });
-  };
+function updateArtBox() {
+  var artLevel = document.getElementById('art-level').value;
+  document.getElementById('art-level-number').value = artLevel
+}
 
-  rangeSlider();
-});
+function updateArtSlider() {
+  var artLevelNumber = document.getElementById('art-level-number').value;
+  document.getElementById('art-level').value = artLevelNumber
+}
