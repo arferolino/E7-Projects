@@ -55,18 +55,34 @@
             <option value="Shimadra Staff">Shimadra Staff</option>   
         </select>
     </div>
-    </br>
+    <br/>
     <div class='slidecontainer'>
         <label style="margin-left: 50px">
-            <h5>Health</h5>
+            <h5>Caster Health</h5>
         </label>
         <div class='range-slider'>
-            <input type="range" value='5000' oninput="updateHealthBox()" style="margin-left: 65px" min="1000" max="25000" value="1500" class="slider"
-                id='health'/>
-            <input type="number" value='5000' class='slider-input' id='health-number' oninput="updateHealthSlider()"/>
+            <input type="range" value='5000' oninput="updateCasterHealthBox()" style="margin-left: 65px" min="1000" max="25000" class="slider"
+                id='caster-health'/>
+            <input type="number" value='5000' class='slider-input' id='caster-health-number' oninput="updateCasterHealthSlider()"/>
         </div>
     </div>
-    </br>
+    <br/>
+    <div class='slidecontainer'>
+        <label style="margin-left: 50px">
+            <h5>Target Health</h5>
+        </label>
+        <input type='range' value='1000' oninput="updateTargetHealthBox()" style='margin-left: 65px' min='1000' max="35000" class='slider' id='target-health'/>
+        <input type='number' value='1000' class='slider-input' id='target-health-number' oninput="updateTargetHealthSlider()"/>
+    </div>
+    <br/>
+    <div class='slidecontainer'>
+        <label style="margin-left: 50px">
+            <h5>Caster Attack</h5>
+        </label>
+        <input type='range' value='1000' oninput="updateCasterAttackBox()" style='margin-left: 65px' min='1000' max="4000" class='slider' id='caster-attack' />
+        <input type='number' value='1000' class='slider-input' id='caster-attack-number' oninput="updateCasterAttackSlider()"/>
+    </div>
+    <br/>
     <div class='slidecontainer'>
         <label style="margin-left: 50px">
             <h5>Artifact Level</h5>

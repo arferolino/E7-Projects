@@ -1,11 +1,11 @@
-function updateHealthBox() {
-  var health = document.getElementById('health').value;
-  document.getElementById('health-number').value = health
+function updateCasterHealthBox() {
+  var casterHealth = document.getElementById('caster-health').value;
+  document.getElementById('caster-health-number').value = casterHealth
 }
 
-function updateHealthSlider() {
-  var healthNumber = document.getElementById('health-number').value;
-  document.getElementById('health').value = healthNumber
+function updateCasterHealthSlider() {
+  var casterHealthNumber = document.getElementById('caster-health-number').value;
+  document.getElementById('caster-health').value = casterHealthNumber
 }
 
 function updateArtBox() {
@@ -16,4 +16,24 @@ function updateArtBox() {
 function updateArtSlider() {
   var artLevelNumber = document.getElementById('art-level-number').value;
   document.getElementById('art-level').value = artLevelNumber
+}
+
+function updateTargetHealthBox() {
+  var targetHealth = document.getElementById('target-health').value;
+  document.getElementById('target-health-number').value = targetHealth
+}
+
+function updateTargetHealthSlider() {
+  var targetHealthSlider = document.getElementById('target-health-number').value;
+  document.getElementById('target-health').value = targetHealthSlider
+}
+
+function updateCasterAttackBox() {
+  var casterAttack = document.getElementById('caster-attack').value;
+  document.getElementById('caster-attack-number').value = casterAttack
+}
+
+function updateCasterAttackSlider() {
+  var casterAttackSlider = document.getElementById('caster-attack-number').value;
+  document.getElementById('caster-attack').value = casterAttackSlider
 }
