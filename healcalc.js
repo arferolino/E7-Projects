@@ -37,3 +37,13 @@ function updateCasterAttackSlider() {
   var casterAttackSlider = document.getElementById('caster-attack-number').value;
   document.getElementById('caster-attack').value = casterAttackSlider
 }
+
+function updateDamageDealtBox() {
+  var damageDealt = document.getElementById('damage-dealt').value;
+  document.getElementById('damage-dealt-number').value = damageDealt
+}
+
+function updateDamageDealtSlider() {
+  var damageDealtSlider = document.getElementById('damage-dealt-number').value;
+  document.getElementById('damage-dealt').value = damageDealtSlider
+}
