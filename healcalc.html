@@ -61,9 +61,9 @@
             <h5>Caster Health</h5>
         </label>
         <div class='range-slider'>
-            <input type="range" value='5000' oninput="updateCasterHealthBox()" style="margin-left: 65px" min="1000" max="25000" class="slider"
+            <input type="range" value='8000' oninput="updateCasterHealthBox()" style="margin-left: 65px" min="8000" max="25000" class="slider"
                 id='caster-health'/>
-            <input type="number" value='5000' class='slider-input' id='caster-health-number' oninput="updateCasterHealthSlider()"/>
+            <input type="number" value='8000' class='slider-input' id='caster-health-number' oninput="updateCasterHealthSlider()"/>
         </div>
     </div>
     <br/>
@@ -71,8 +71,8 @@
         <label style="margin-left: 50px">
             <h5>Target Health</h5>
         </label>
-        <input type='range' value='1000' oninput="updateTargetHealthBox()" style='margin-left: 65px' min='1000' max="35000" class='slider' id='target-health'/>
-        <input type='number' value='1000' class='slider-input' id='target-health-number' oninput="updateTargetHealthSlider()"/>
+        <input type='range' value='8000' oninput="updateTargetHealthBox()" style='margin-left: 65px' min='8000' max="35000" class='slider' id='target-health'/>
+        <input type='number' value='8000' class='slider-input' id='target-health-number' oninput="updateTargetHealthSlider()"/>
     </div>
     <br/>
     <div class='slidecontainer'>
@@ -96,18 +96,24 @@
     <button type='button'>Calculate</button>
     </br>
     </br>
-    <div class='resultcontainer'>
+    <div class='slidecontainer'>
     <h4>Heals</h4>
     <div>
         <table class="table table-bordered table-sm col-sm-12">
             <thead class="table-secondary">
                 <tr>
                     <th>Skill 1</th>
+                    <th>Skill 1 Soulburn</th>
                     <th>Skill 2</th>
+                    <th>Skill 2 Soulburn</th>
                     <th>Skill 3</th>
+                    <th>Skill 3 Soulburn</th>
                 </tr>
             </thead>
             <tbody>
+                <th>N/A</th>
+                <th>N/A</th>
+                <th>N/A</th>
                 <th>N/A</th>
                 <th>N/A</th>
                 <th>N/A</th>
