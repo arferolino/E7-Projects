@@ -65,15 +65,13 @@
         </select>
     </div>
     <br/>
-    <div class='slidecontainer'>
+    <div class='slidecontainer' id='caster-health-slider'>
         <label style="margin-left: 50px">
             <h5>Caster Health</h5>
         </label>
-        <div class='range-slider' id='caster-health-slider'>
             <input type="range" value='8000' oninput="updateCasterHealthBox()" style="margin-left: 65px" min="8000" max="25000" class="slider"
                 id='caster-health'/>
             <input type="number" value='8000' class='slider-input' id='caster-health-number' oninput="updateCasterHealthSlider()"/>
-        </div>
     </div>
     <br/>
     <div class='slidecontainer' id='target-health-slider'>
