@@ -1,49 +1,55 @@
-function updateCasterHealthBox() {
-  var casterHealth = document.getElementById('caster-health').value;
-  document.getElementById('caster-health-number').value = casterHealth
-}
-
-function updateCasterHealthSlider() {
-  var casterHealthNumber = document.getElementById('caster-health-number').value;
-  document.getElementById('caster-health').value = casterHealthNumber
-}
-
-function updateArtBox() {
-  var artLevel = document.getElementById('art-level').value;
-  document.getElementById('art-level-number').value = artLevel
-}
-
-function updateArtSlider() {
-  var artLevelNumber = document.getElementById('art-level-number').value;
-  document.getElementById('art-level').value = artLevelNumber
-}
-
-function updateTargetHealthBox() {
-  var targetHealth = document.getElementById('target-health').value;
-  document.getElementById('target-health-number').value = targetHealth
-}
-
-function updateTargetHealthSlider() {
-  var targetHealthSlider = document.getElementById('target-health-number').value;
-  document.getElementById('target-health').value = targetHealthSlider
-}
-
-function updateCasterAttackBox() {
-  var casterAttack = document.getElementById('caster-attack').value;
-  document.getElementById('caster-attack-number').value = casterAttack
-}
-
-function updateCasterAttackSlider() {
-  var casterAttackSlider = document.getElementById('caster-attack-number').value;
-  document.getElementById('caster-attack').value = casterAttackSlider
-}
-
-function updateDamageDealtBox() {
-  var damageDealt = document.getElementById('damage-dealt').value;
-  document.getElementById('damage-dealt-number').value = damageDealt
-}
-
-function updateDamageDealtSlider() {
-  var damageDealtSlider = document.getElementById('damage-dealt-number').value;
-  document.getElementById('damage-dealt').value = damageDealtSlider
+$(document).ready(function(){
+  $('#caster-health').on('input', function(){
+    let casterHealth = $('#caster-health').val()
+    $('#caster-health-number').val(casterHealth)
+  });
+  $('#caster-health-number').on('input', function(){
+    let casterHealthNumber = $('#caster-health-number').val()
+    $('#caster-health').val(casterHealthNumber)
+  });
+  $('#art-level').on('input', function(){
+    let artLevel = $('#art-level').val()
+    $('#art-level-number').val(artLevel)
+  });
+  $('#art-level-number').on('input', function(){
+    let artLevelNumber = $('#art-level-number').val()
+    $('#art-level').val(artLevelNumber)
+  });
+  $('#target-health').on('input', function(){
+    let targetHealth = $('#target-health').val()
+    $('#target-health-number').val(targetHealth)
+  });
+  $('#target-health-number').on('input', function(){
+    let targetHealthNumber = $('#target-health-number').val
+    $('#target-health') = val(targetHealthNumber)
+  });
+  $('#caster-attack').on('input', function(){
+    let casterAttack = $('#caster-attack').val()
+    $('#caster-attack-number').val(casterAttack)
+  });
+  $('#caster-attack-number').on('input', function(){
+    let casterAttackNumber = $('#caster-attack-number').val()
+    $('#caster-attack').val(casterAttackNumber)
+  });
+  $('#damage-dealt').on('input', function(){
+    let damageDealt = $('#damage-dealt').val()
+    $('#damage-dealt-number').val(damageDealt)
+  });
+  $('#damage-dealt-number').on('input', function(){
+    let damageDealtNumber = $('#damage-dealt-number').val()
+    $('#damage-dealt').val(damageDealtNumber)
+  });
+});
+function hideShow() {
+  var heroSelect = document.getElementById('hero-select').value;
+  var casterBox = document.getElementById('caster-health-slider');
+  var targetBox = document.getElementById('target-health-slider');
+  var attackBox = document.getElementById('caster-attack-slider');
+  var damageBox = document.getElementById('damage-dealt-slider');
+  let casterHealthHeroes = ["Achates", "Angelica", "Blood Moon Haste", "Destina", "Elena", "Kizuna AI", "Maid Chloe", "Rin", "Roana", "Ruele", "Shooting Star Achates", "Sonia", "Tamarinne"];
+    if (casterHealthHeroes.includes(heroSelect)) {
+      casterBox.style.display = "block";
+    } else {
+      casterBox.style.display = "none";
+    }
 }
