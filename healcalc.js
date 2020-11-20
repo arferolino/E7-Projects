@@ -47,9 +47,27 @@ function hideShow() {
   var attackBox = document.getElementById('caster-attack-slider');
   var damageBox = document.getElementById('damage-dealt-slider');
   let casterHealthHeroes = ["Achates", "Angelica", "Blood Moon Haste", "Destina", "Elena", "Kizuna AI", "Maid Chloe", "Rin", "Roana", "Ruele", "Shooting Star Achates", "Sonia", "Tamarinne"];
+  let targetHealthHeroes = ["Angelic Montmorancy", "Ainos", "Aither", "Desert Jewel Basar", "Destina", "Doris", "Elson", "Hazel", "Lots", "Mascot Hazel", "Magic Scholar Doris", "Montmorancy", "Ray", "Ruele", "Sinful Angelica"];
+  let casterAttackHeroes = ["Aither", "Blaze Dingo", "Desert Jewel Basar", "Hazel", "Mascot Hazel"];
+  let damageDealtHeroes = ["Blaze Dingo", "Blood Moon Haste"];
     if (casterHealthHeroes.includes(heroSelect)) {
       casterBox.style.display = "block";
     } else {
       casterBox.style.display = "none";
+    }
+    if (targetHealthHeroes.includes(heroSelect)) {
+      targetBox.style.display = "block";
+    } else {
+      targetBox.style.display = "none";
+    }
+    if (casterAttackHeroes.includes(heroSelect)) {
+      attackBox.style.display = "block";
+    } else {
+      attackBox.style.display = "none";
+    }
+    if (damageDealtHeroes.includes(heroSelect)) {
+      damageBox.style.display = "block";
+    } else {
+      damageBox.style.display = "none";
     }
 }
