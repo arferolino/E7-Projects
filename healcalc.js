@@ -46,8 +46,8 @@ function hideShow() {
   var targetBox = document.getElementById('target-health-slider');
   var attackBox = document.getElementById('caster-attack-slider');
   var damageBox = document.getElementById('damage-dealt-slider');
-  let casterHealthHeroes = ["Achates", "Angelica", "Blood Moon Haste", "Destina", "Elena", "Kizuna AI", "Maid Chloe", "Rin", "Roana", "Ruele", "Shooting Star Achates", "Sonia", "Tamarinne"];
-  let targetHealthHeroes = ["Angelic Montmorancy", "Ainos", "Aither", "Desert Jewel Basar", "Destina", "Doris", "Elson", "Hazel", "Lots", "Mascot Hazel", "Magic Scholar Doris", "Montmorancy", "Ray", "Ruele", "Sinful Angelica"];
+  let casterHealthHeroes = ["Achates", "Angelica", "Blood Moon Haste", "Destina", "Elena", "Kizuna AI", "Maid Chloe", "Rin", "Roana", "Ruele of Light", "Shooting Star Achates", "Sonia", "Tamarinne"];
+  let targetHealthHeroes = ["Angelic Montmorancy", "Ainos", "Aither", "Desert Jewel Basar", "Destina", "Doris", "Elson", "Hazel", "Lots", "Mascot Hazel", "Magic Scholar Doris", "Montmorancy", "Ray", "Ruele of Light", "Sinful Angelica"];
   let casterAttackHeroes = ["Aither", "Blaze Dingo", "Desert Jewel Basar", "Hazel", "Mascot Hazel"];
   let damageDealtHeroes = ["Blaze Dingo", "Blood Moon Haste"];
     if (casterHealthHeroes.includes(heroSelect)) {
